@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>phplessons</title>
 </head>
 <body>
+<h3>Hey sis, what's your name?</h3>
+<form method="GET"> 
+<input type="text" name="person">
+<button>SUBMIT</button>
+</form>
+<br>
   <?php
-echo "Hello world";
+  $name = $_GET['person'];
+echo $name." is a pretty lady.";
   ?>
 </body>
 </html>
