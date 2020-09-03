@@ -7,22 +7,38 @@
   <title>phplessons</title>
 </head>
 <body>
-<h3>Hey sis, what's your name?</h3>
+<?php
+
+?>
+</body>
+</html>
+
+<!-- <?php ?> -->
+
+
+<!-- <?php
+//Arrays
+$names=array("Mbithe","Tata","Papa");
+echo $names['0'];
+?> -->
+
+<!--this code replaces the name Caroline in Hi Caroline with Jackie <?php
+echo str_replace("Caroline","Jackie","Hi Caroline");
+?> -->
+
+<!-- <h3>Hey sis, what's your name?</h3>
 <form method="GET"> 
 <input type="text" name="person">
 <button>SUBMIT</button>
 </form>
 <br>
-  <?php
+this code gets a name from the form's input variable and diaplays it
+<?php
   $name = $_GET['person'];
 echo $name." is a pretty lady.";
-  ?>
-</body>
-</html>
+  ?>  -->
 
-
-
-<!-- comaprison operators. == equal to, <> or != not equal to. <?php
+<!-- comaprison operators. == equal to, <> or != not equal to, === equal to and have the same datatype, !== not the same value and same datatype. <?php
 
 $num = 10;
 $num1 = 41;
@@ -67,7 +83,7 @@ echo $num;
 
 ?> -->
 
-<!-- arithmetic and modular operators <?php
+<!-- arithmetic and modular operators. e.g 5**5 is 5 to the power of 5<?php
 
 $a=14;
 $a++;
