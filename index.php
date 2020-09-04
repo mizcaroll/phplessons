@@ -1,18 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>phplessons</title>
-</head>
-<body>
-<!-- php exercise. Building a calculator -->
+<?php
+include "header.php";
+?>
+<section>
+  <div class="Main">
+  <h1>Hi there</h1>
+  </div>
+</section>
+
+
+</body>
+</html>
+
+<!-- <?php?> -->
+
+<!-- creating your own functions. In this lesson, i called one function (newCalc) twice using separate variables in each instance <?php
+$x = 120;
+
+function newCalc($x) {
+$newnum = $x * 0.75;
+echo "Here is 75% of your value: ".$newnum;
+}
+newCalc($x);
+echo "<br>";
+$a = 30;
+newCalc($a);
+?> -->
+
+<!-- foreach loop is used with arrays. It refers to an array and loops through it. <?php
+$array = array("Mbithe","Tata","Papa","Vitus","Ndunge");
+foreach ($array as $loopdata) {
+echo "My name is ".$loopdata."<br>";
+}
+?> -->
+
+<!-- we use a for loop when we know exactly how many times we're going to loop beforehand. e.g we can start $x at 0 or even 5 if we wanted.<?php
+for ($x=0; $x<=10; $x++) {
+  echo "hi<br>";
+  }
+  ?> -->
+
+<!-- In do while loop, the statement must be executed AT LEAST ONCE before the condition is tested to be true or false.<?php
+$x=1;
+do {
+  echo "hi there<br>";
+  $x++;
+}
+while ($x <= 5); 
+?> -->
+
+<!-- while loop <?php
+$x=1;
+while ($x < 5) {
+  echo "hi there<br>";
+  $x++;
+}
+?> -->
+
+<!-- this code prints out what day of the week it is using system defined function w. <?php
+$dayofweek = date("w");
+
+switch ($dayofweek) {
+case 1:
+  echo "It is Monday";
+break;
+case 2:
+  echo "It is Tuesday";
+break;
+case 3:
+  echo "It is Wednesday";
+break;
+case 4:
+  echo "It is Thursday";
+break;
+case 5:
+  echo "It is Friday";
+break;
+case 6:
+  echo "It is Saturday";
+break;
+case 0:
+  echo "It is Sunday";
+break;
+}
+?> -->
+
+<!-- php exercise. Building a calculator
 <form>
 <input type="text" name="num1" placeholder="Number 1">
 <input type="text" name="num2" placeholder="Number 2">
-
-<!-- code for dropdown options -->
 <select name="operator">
 <option>None</option>
 <option>Add</option>
@@ -47,11 +122,8 @@ case "Divide":
 break;
   }
 }
-?>
-</body>
-</html>
+?> -->
 
-<!-- <?php?> -->
 <!-- <?php
 //switch statement. All different possible answers are written inside the curly brackets.
 //useful if you just need to check for answers and not conditions
