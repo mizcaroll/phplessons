@@ -7,14 +7,102 @@
   <title>phplessons</title>
 </head>
 <body>
-<?php
+<!-- php exercise. Building a calculator -->
+<form>
+<input type="text" name="num1" placeholder="Number 1">
+<input type="text" name="num2" placeholder="Number 2">
 
+<!-- code for dropdown options -->
+<select name="operator">
+<option>None</option>
+<option>Add</option>
+<option>Subtract</option>
+<option>Multiply</option>
+<option>Divide</option>
+</select>
+<br>
+<button type="submit" name="submit" value="submit">Calculate</button>
+</form>
+<p>The answer is</p>
+<?php
+if (isset($_GET['submit'])) {
+  $result1 = $_GET['num1'];
+  $result2 = $_GET['num2'];
+  $operator = $_GET['operator'];
+  switch ($operator) {
+case "None": 
+  echo "ERROR - You need to select a method";
+break;
+case "Add": 
+  echo $result1 + $result2;
+break;
+case "Subtract": 
+  echo $result1 - $result2;
+break;
+case "Multiply": 
+  echo $result1 * $result2;
+break;
+case "Divide": 
+  echo $result1 / $result2;
+break;
+  }
+}
 ?>
 </body>
 </html>
 
-<!-- <?php ?> -->
+<!-- <?php?> -->
+<!-- <?php
+//switch statement. All different possible answers are written inside the curly brackets.
+//useful if you just need to check for answers and not conditions
+$x = 8;
+switch ($x) {
+case 1:
+  echo "The answer is 1";
+break;
+case "number":
+  echo "The answer is number";
+break;
+case 3:
+  echo "The answer is 3";
+break;
+case 4:
+  echo "The answer is 4";
+break;
+default:
+echo "There is no answer";
+}
+?> -->
 
+<!-- another if statement lesson <?php
+$x=1;
+if ($x==1) {
+  echo "Carol is very determined to learn php.";
+}
+elseif ($x==2) {
+  echo "Carol is kinda determined.";
+}
+else {
+  echo "Carol is lazy.";  
+}
+?> -->
+
+<!-- <?php
+//logical operators. || is OR operator. && is AND operator. 
+// xor operator means only one of the conditions has to be true. Not both.
+$x=10;
+$y=20;
+if ($x==$y or 1==1) {
+  echo "True";
+}
+?> -->
+
+<!-- <?php
+//increment and decrement operators
+// ++ before $x means you'll add 1, then echo out variable x.
+$x=10;
+echo ++$x;
+?> -->
 
 <!-- <?php
 //Arrays
