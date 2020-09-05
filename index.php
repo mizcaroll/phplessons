@@ -1,13 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>phplessons</title>
+</head>
+<body>
+
 <?php
-include "header.php";
+setcookie("name", "Dani", time() + 86400);
+
+$_SESSION['name'] = "14";
 ?>
-<section>
-  <div class="Main">
-  <h1>Hi there</h1>
-  </div>
-</section>
-
-
 </body>
 </html>
 
