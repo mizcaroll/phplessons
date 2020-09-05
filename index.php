@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +11,27 @@
   <title>phplessons</title>
 </head>
 <body>
-
+<ul>
+  <li><a href="index.php">Home</a></li>
+  <li><a href="contact.php">Contact</a></li>
+</ul>
 <?php
-setcookie("name", "Dani", time() + 86400);
 
-$_SESSION['name'] = "14";
+$_SESSION['username'] = "mizcaroll";
+
+if (!isset($_SESSION['username'])) {
+echo " You aren't logged in!";
+} 
+else {
+  echo "logged in as ".$_SESSION['username'];
+}
+
 ?>
 </body>
 </html>
 
 <!-- <?php?> -->
+
 
 <!-- creating your own functions. In this lesson, i called one function (newCalc) twice using separate variables in each instance <?php
 $x = 120;

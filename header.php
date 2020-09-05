@@ -1,4 +1,5 @@
 <?php
+include session_start();
 include "functions/user-functions.php";
 ?>
 <!DOCTYPE html>
