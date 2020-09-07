@@ -32,7 +32,32 @@ else {
 
 <!-- <?php?> -->
 
+<!-- code for starting  a session in php <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>phplessons</title>
+</head>
+<body>
+<ul>
+  <li><a href="index.php">Home</a></li>
+  <li><a href="contact.php">Contact</a></li>
+</ul>
+<?php
 
+$_SESSION['username'] = "mizcaroll";
+
+if (!isset($_SESSION['username'])) {
+echo " You aren't logged in!";
+} 
+else {
+  echo "logged in as ".$_SESSION['username'];
+}
+?>
+</body>
+</html> -->
 <!-- creating your own functions. In this lesson, i called one function (newCalc) twice using separate variables in each instance <?php
 $x = 120;
 
