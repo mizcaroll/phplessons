@@ -5,4 +5,17 @@ id int(11) not null PRIMARY KEY AUTO_INCREMENT,
     date datetime not null
 );
 
+
 insert into posts (subject, content, date) VALUES ('This is the subject', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod sollicitudin viverra. Morbi egestas tincidunt libero, pellentesque mollis augue suscipit id. Mauris elementum magna ac libero elementum, eu tincidunt nibh tempor. Aliquam facilisis mauris velit, ac efficitur est tempor placerat.', '2015-09-07 14:48:04');
+
+INSERT INTO posts (subject, content, date) VALUES ('Application for helpdesk engineer', 'I wish to apply for the above role in your company. I have a BSC in sw eng blah blah', '2018-05-20 17:28:16');
+
+SELECT * FROM posts WHERE id='1';
+
+UPDATE posts SET subject='New subject', content='Some new piece of content here for training' WHERE id='1';
+
+DELETE FROM posts WHERE id='1';
+
+SELECT * FROM posts ORDER BY id ASC;
+
+SELECT * FROM posts ORDER BY subject DESC;
